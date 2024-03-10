@@ -9,12 +9,11 @@ public class PlanningPokerByJohn {
         Estimate lowestEstimate = null;
         Estimate highestEstimate = null;
 
-        for(Estimate estimate: estimates) {
-            if(highestEstimate == null ||
+        for (Estimate estimate : estimates) {
+            if (highestEstimate == null ||
                     estimate.getEstimate() > highestEstimate.getEstimate()) {
                 highestEstimate = estimate;
-            }
-            else if(lowestEstimate == null ||
+            } else if (lowestEstimate == null ||
                     estimate.getEstimate() < lowestEstimate.getEstimate()) {
                 lowestEstimate = estimate;
             }
