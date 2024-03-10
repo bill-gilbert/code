@@ -1,6 +1,11 @@
 package ch1;
 
-import net.jqwik.api.*;
+import net.jqwik.api.Arbitraries;
+import net.jqwik.api.Arbitrary;
+import net.jqwik.api.Combinators;
+import net.jqwik.api.ForAll;
+import net.jqwik.api.Property;
+import net.jqwik.api.Provide;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -11,7 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 
-public class PlanningPokerTest {
+class PlanningPokerTest {
 
     @Test
     void rejectNullInput() {
