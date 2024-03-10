@@ -17,7 +17,6 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 
 class PlanningPokerTest {
-
     @Test
     void rejectNullInput() {
         assertThatThrownBy(() -> new PlanningPoker().identifyExtremes(null))
@@ -123,5 +122,4 @@ class PlanningPokerTest {
         assertThat(devs).isEmpty();
 
     }
-
 }
